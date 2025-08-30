@@ -39,4 +39,13 @@ public:
     int getFila() {
         return fila;
     }
+
+    void setColumna(int c) {
+        columna = c;
+        sprite.setPosition((float)(columna * 64), (float)(fila * 64));
+    }
+
+    int getColumna() {
+        return columna;
+    }
 };
