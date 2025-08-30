@@ -48,4 +48,14 @@ public:
     int getColumna() {
         return columna;
     }
+
+    void setPosicion(int f, int c) {
+        fila = f;
+        columna = c;
+        sprite.setPosition((float)(columna * 64), (float)(fila * 64));
+    }
+
+    void dibujar(sf::RenderWindow& ventana) {
+        ventana.draw(sprite);
+    }
 };

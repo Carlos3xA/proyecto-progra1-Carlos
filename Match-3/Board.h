@@ -26,5 +26,13 @@ public:
             }
         }
     }
+
+    void dibujar(sf::RenderWindow& ventana) {
+        for (int fila = 0; fila < 8; fila++) {
+            for (int columna = 0; columna < 8; columna++) {
+                matriz[fila][columna]->dibujar(ventana);
+            }
+        }
+    }
 };
 
